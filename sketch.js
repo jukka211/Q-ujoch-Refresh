@@ -84,59 +84,25 @@ $(document).ready(function() {
         $(this).siblings('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9').css('display', 'none');
         $(this).css('display', 'block');
     });
+ 
+    $('.block0').hover(function() {
+        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
+        $('.text, .text-bottom').css('display', 'block');
+        $('body').css('background', 'red');
+    });
 
     $('.block1').hover(function() {
         $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
         $('.Q, .A').css('display', 'block');
-        $('body').css('background', 'red');
+        $('body').css('background', '#FF007A');
     });
 
     $('.block2').hover(function() {
         $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
         $('.Q2, .A2').css('display', 'block');
-        $('body').css('background', 'white');
+        $('body').css('background', '#FFFF00');
     });
 
-    $('.block3').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q3, .A3').css('display', 'block');
-        $('body').css('background', 'hotpink');
-    });
-    $('.block4').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q4, .A4').css('display', 'block');
-        $('body').css('background', 'yellow');
-    });
-    $('.block5').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q5, .A5').css('display', 'block');
-        $('body').css('background', 'fucsia');
-    });
-    $('.block6').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q6, .A6').css('display', 'block');
-        $('body').css('background', 'green');
-    });
-    $('.block7').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q7, .A7').css('display', 'block');
-        $('body').css('background', 'cyan');
-    });
-    $('.block8').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q8, .A8').css('display', 'block');
-        $('body').css('background', 'teal');
-    });
-    $('.block9').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text, .text-bottom').css('display', 'none');
-        $('.Q9, .A9').css('display', 'block');
-        $('body').css('background', 'pink');
-    });
-    $('.block10').hover(function() {
-        $('.Q, .A, .Q2, .A2, .Q3, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .text, .text-bottom').css('display', 'none');
-        $('.Q10, .A10').css('display', 'block');
-        $('body').css('background', 'orange');
-    });
 });
 
 

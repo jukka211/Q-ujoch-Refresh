@@ -5,7 +5,7 @@
 
 
 body{
-    background-color:#ffffff;
+    background-color:#ff0000;
     transition: all 500ms ease-in-out;
     margin: 0;
     padding: 0;
@@ -116,61 +116,51 @@ body{
 }
 .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10  {
     display: none;
+    width: 85%;
 }
 .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10  {
-    left:20px;
+    left:10px;
     top:10px;
-    width:90%;
+    
     mix-blend-mode: exclusion;
     
 }
 
 
-.description {
-    font-family:Helvetica-Medium;
-    font-size: 18pt;
-    line-height: 18pt;
-    letter-spacing: 0.5px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    left:107px;
-    top:40px;
-    text-indent: 40px;
-    width:85%;
-    mix-blend-mode: exclusion;
-    background-color: red;
-    display: none;
-}
+
 
 .text {
-    left:20px;
+    left:10px;
     top:10px;
     width:90%;
     
 }
 .text-bottom {
-    left:20px;
+    left:10px;
     bottom:10px;
     width:90%;
     text-decoration: none !important;
     color:#ffffff !important;
 }
 .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10 {
-    left:20px;
+    left:10px;
     bottom:10px;
-    width:90%;
+    z-index: -999;
+    
     
 }
 .archive{
-    right:20px;
+    right:10px;
     bottom:10px;
     z-index: 9999;
+    color: rgb(255, 255, 255);
     
 }
 .kontakt{
-    right:20px;
+    right:10px;
     top:10px;
     z-index: 9999;
+    color: rgb(255, 255, 255);
    
 }
 
@@ -194,13 +184,37 @@ text-underline-offset: 3px;
     text-decoration-thickness:1.4px;
     text-underline-offset: 3px;
 }
-.block1, .block2, .block3,.block4,.block5,.block6,.block7,.block8,.block9,.block10 {
+.block0, .block1, .block2 {
     z-index: 999;
     flex:1;
     background-color: transparent;
     margin-bottom: 1px;
 }
- 
+
+a {
+    text-decoration: none;
+    color:white;
+}
+.archive {
+    display: flex;
+    gap: 10px; /* Adds space between the buttons */
+}
+.archive .btn {
+    display: inline-block;
+}
+
+.blink {
+    animation: blink-animation 400ms steps(5, start) infinite;
+}
+
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+
 /* For screens with a width of 2888px or wider */
 @media (min-width: 2888px) {
    
@@ -272,7 +286,7 @@ line-height: 14pt;
 
 @media (max-width: 431px) {
     
-    .logo {letter-spacing: -22px;
+    .logo {letter-spacing: -24px;
     }
     .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .text, .text-bottom {
         width:96%;
@@ -292,6 +306,6 @@ line-height: 14pt;
         line-height: 14pt;
         }
     
-    .logo {letter-spacing: -20px;
+    .logo {letter-spacing: -22px;
     }
   }

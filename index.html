@@ -16,114 +16,32 @@
 
 <body>
   <div class="container">
+  <div class="block0"></div>
   <div class="block1"></div>
   <div class="block2"></div>
-  <div class="block3"></div>
-  <div class="block4"></div>
-  <div class="block5"></div>
-  <div class="block6"></div>
-  <div class="block7"></div>
-  <div class="block8"></div>
-  <div class="block9"></div>
-  <div class="block10"></div>
+  
 </div>
 <div class="wrap">
-<div class="text">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The rhizome includes the best and the worst: potato and couchgrass, or the weed. Animal and plant, couchgrass is crabgrass. (Deleuze/Guattari 1977)</div>
-  <div class="Q">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kultursuppe</div>
-  <div class="Q2">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be temporary / be permanent </div>
-  <div class="Q3">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do everything / do nothing</div>
-  <div class="Q4">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k. u. k. u. k. Sanatorium zur Schießhalle</div>
-  <div class="Q5">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stahlstadtkinder immer im Duell</div>
-  <div class="Q6">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GartenquinÖ</div>
-  <div class="Q7">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sagra al Wirtshaus</div>
-  <div class="Q8">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLAKATropolis</div>
-  <div class="Q9">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rhyzomaniac</div>
-  <div class="Q10">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blank Series is a deliberate schedule gap for spontaneity and unexpected events. It allows the team to react and seize opportunities.</div>
+<div class="text">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The rhizome includes the best and the worst: potato and couchgrass, or the weed. Animal and plant, couchgrass is crabgrass. (Deleuze/Guattari 1977)
+  
+</div>
+  <div class="Q">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signal vs. Noise vs. Body. How to sculpt a sound space with needle nails?</div>
+  <div class="Q2">Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Savoir* faire Gala. How does your mindset's rigidity shape your gut's openness?</div>
+  
 
   <div class="logo">
-  <div class="el" id="translateElement11">q:ujOchÖ</div>
-  <div class="ten" id="translateElement10">q:ujOchÖ</div>
-  <div class="nin" id="translateElement9">q:ujOchÖ</div>
-  <div class="eit" id="translateElement8">q:ujOchÖ</div>
-  <div class="sev" id="translateElement7">q:ujOchÖ</div>
-  <div class="six" id="translateElement6">q:ujOchÖ</div>
-  <div class="five" id="translateElement5">q:ujOchÖ</div>
-  <div class="four" id="translateElement4">q:ujOchÖ</div>
-  <div class="three" id="translateElement3">q:ujOchÖ</div>
-  <div class="two" id="translateElement2">q:ujOchÖ</div>
-  <div class="one" id="translateElement">q:ujOchÖ</div>
+  <div class="el" id="translateElement11">qujOchÖ</div>
+  <div class="ten" id="translateElement10">qujOchÖ</div>
+  <div class="nin" id="translateElement9">qujOchÖ</div>
+  <div class="eit" id="translateElement8">qujOchÖ</div>
+  <div class="sev" id="translateElement7">qujOchÖ</div>
+  <div class="six" id="translateElement6">qujOchÖ</div>
+  <div class="five" id="translateElement5">qujOchÖ</div>
+  <div class="four" id="translateElement4">qujOchÖ</div>
+  <div class="three" id="translateElement3">qujOchÖ</div>
+  <div class="two" id="translateElement2">qujOchÖ</div>
+  <div class="one" id="translateElement">qujOchÖ</div>
   </div>
-
-  
-  <script>
-    // Define IDs and options globally
-    var ids = ["translateElement", "translateElement2", "translateElement3", "translateElement4", "translateElement5", "translateElement6", "translateElement7", "translateElement8", "translateElement9", "translateElement10", "translateElement11"];
-
-    var options = ["q:ujOchÖ", "Q:ujochÖ", "q:ujOchö", "q:uJochö", "Q:ujochö", "q:Ujochö"];
-
-    // Function to generate random options
-    function getRandomOption() {
-        var randomIndex = Math.floor(Math.random() * options.length);
-        return options[randomIndex];
-    }
-    
-    // Function to update text
-    function updateText() {
-        // Pick a random option
-        var randomOption = getRandomOption();
-
-        ids.forEach(function(id) {
-            var element = document.getElementById(id);
-            if (element) {
-                element.textContent = randomOption; // Use textContent instead of innerText
-            } else {
-                console.log("Element with ID " + id + " not found.");
-            }
-        });
-    }
-
-    // Function to debounce the updateText function
-    function debounce(func, delay) {
-        var timeout;
-        return function() {
-            var context = this, args = arguments;
-            clearTimeout(timeout);
-            timeout = setTimeout(function() {
-                func.apply(context, args);
-            }, delay);
-        };
-    }
-
-    // Debounce the updateText function with a delay of 500 milliseconds
-    var debouncedUpdateText = debounce(updateText, 50);
-
-    // Update text when mouse moves or touch occurs
-    function handleInput(event) {
-        var inputX = event.clientX || event.touches[0].clientX; // For mouse or touch events
-        var windowWidth = window.innerWidth;
-        var halfWindowWidth = windowWidth / 100;
-
-        // If input occurs beyond the center of the window
-        if (inputX > halfWindowWidth) {
-            debouncedUpdateText(); // Call debounced updateText function
-        }
-    }
-
-    // Listen for mouse movement
-    window.addEventListener('mousemove', handleInput);
-
-    // Listen for touch events
-    window.addEventListener('touchstart', handleInput);
-    window.addEventListener('touchmove', handleInput);
-
-    // Update text initially
-    window.addEventListener('load', function() {
-        updateText(); // Call initially
-    });
-</script>
-
-
-
 
 
 
@@ -132,24 +50,21 @@
 
 
   <div class="text-bottom" style="color:white !important;">
-    A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="text-decoration: none !important; color: inherit !important;">+43 732-21-67-13</a>, Waldeggstraße 16, 4020 Linz (AUT)
+    A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="text-decoration: none !important; color: inherit !important;">+43 732-21-67-13</a>, Waldeggstraße 16, 4020 Linz (AUT)
 </div>
 
 
 
- <div class="A">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz</div>
- <div class="A2">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inside and outside the former Wirtshaus zur Schießhalle</div>
- <div class="A3">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz</div>
- <div class="A4">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz</div>
- <div class="A5">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz </div>
- <div class="A6">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz </div>
- <div class="A7">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz </div>
- <div class="A8">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public spaces in the city of Linz</div>
- <div class="A9">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qujOchÖ, Waldeggstraße 116, 4020 Linz</div>
- <div class="A10">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Everywhere and nowhere</div>
+ <div class="A">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thu 6 June 2024 20:30,<a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x477397d108acd9a3:0xf5bf398fdc4eb20?sa=X&ved=1t:8290&ictx=111">Schießhalle, Waldeggstraße 116, Linz</a></div>
+ <div class="A2">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13th of June 2pm, 14th of June 11am/7pm<a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x477397d108acd9a3:0xf5bf398fdc4eb20?sa=X&ved=1t:8290&ictx=111">Schießhalle, Waldeggstraße 116, Linz</a></div>
+ 
 
- <div class="archive"> Archive</div>
- <div class="kontakt"> Contact</div>
+ <div class="archive">
+  <a href="https://qujochoe.org/project-page" target="_blank" class="btn blink">Current Event 6.06,</a>
+  <a href="https://qujochoe.org/project-page" target="_blank" class="btn">Workshop 13.06</a>
+  <a href="https://qujochoe.org/" target="_blank" class="btn">Archive</a>
+</div>
+ <div class="kontakt"><a href="mailto:ulcus@qujOchOE.org" target="_blank">Contact</a></div>
  
  
  
@@ -158,8 +73,8 @@
  <style>
   /* Define CSS variables for font size */
   :root {
-    --default-font-size: calc(100vw / 3.85); /* Adjust this value as needed */
-    --small-screen-font-size: calc(100vw / 3.15); /* Adjust this value as needed */
+    --default-font-size: calc(100vw / 3.7); /* Adjust this value as needed */
+    --small-screen-font-size: calc(100vw / 3); /* Adjust this value as needed */
   }
 
   /* Apply default font size */
@@ -180,8 +95,8 @@
   // Function to update font size variables based on screen width
   function updateFontSizeVariables() {
     var screenWidth = window.innerWidth;
-    var defaultFontSize = screenWidth / 3.85; // Default font size calculation
-    var smallScreenFontSize = screenWidth / 3.15; // Font size for smaller screens
+    var defaultFontSize = screenWidth / 3.7; // Default font size calculation
+    var smallScreenFontSize = screenWidth / 3; // Font size for smaller screens
 
     // Update CSS variables with new font sizes
     document.documentElement.style.setProperty('--default-font-size', defaultFontSize + 'px');
